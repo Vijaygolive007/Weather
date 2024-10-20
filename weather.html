@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!-- font cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="weather.css">
+
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="input-con">
+            <input type="text" autocomplete="off" id="input" placeholder="Enter Your Location">
+            <button class="fa-solid fa-magnifying-glass" id="search"></button>
+        </div>
+        <div class="img-con">
+            <img class="img"  alt="weather">
+            <p class="deg" id="degrees"><b>0 <sup>o</sup>C</b></p>
+            <p class="sky" id="sky"></p>
+        </div>
+        <div class="temp" id="hum-con">
+            <div class="humidity-con">
+                <i class="fa-solid fa-droplet fa-xl"></i>
+                <div class="humidity">
+                    <p class="humidity-per"></p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+
+            <div class="humidity-con">
+                <i class="fa-solid fa-wind fa-xl"></i>
+                <div class="humidity">
+                    <span id="wind-speed"></span>
+                    <p>Wind Speed</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="temp" id="air-con">
+            <div class="humidity-con">
+                <i class="fa-brands fa-wpressr"></i>
+                <div class="humidity">
+                    <p class="air-pre"></p>
+                    <p class="h-text">Air Pressure</p>
+                </div>
+            </div>
+            <div class="humidity-con">
+                <i class="fa-solid fa-arrow-right"></i>
+                <div class="humidity" style="margin-right: 25px;">
+                    <p id="w-deg"></p>
+                    <p class="h-text">Wind deg</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="weather.js"> </script>
+</body>
+
+</html>
